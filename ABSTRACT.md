@@ -5,6 +5,7 @@ The full dataset consists of the following parts:
 - **ZhangLabData: OCT** (available on DatasetNinja)
 - **ZhangLabData: Chest X-Ray** (current)
 
+
 Authors' framework employed transfer learning, a technique that involves training a neural network with a fraction of the data used in conventional approaches. This approach was applied to a dataset of optical coherence tomography images, demonstrating performance comparable to that of human experts in classifying age-related macular degeneration and diabetic macular edema.
 
 In addition to achieving high performance, the authors focused on providing a more transparent and interpretable diagnosis. Their approach involved highlighting the regions recognized by the neural network, enhancing the understanding of the decision-making process.

@@ -1,6 +1,6 @@
 Dataset **ZhangLabData: Chest X-Ray** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/9/H/C9/tCqBrNmzjCawEBDyySNZHHzBQ4rqMdug5OCZmUL2S4IgRASb7032Boyjhuf41VGuLttqw78hhuZCp0oN007xgAtxsfSHZDexATnnu980Eb24JJ0PISGYl2ILU097.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
