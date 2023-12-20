@@ -47,14 +47,18 @@ def convert_and_upload_supervisely_project(
         tag_name = image_path.split("/")[-2]
         if tag_name == "NORMAL":
             tags = [sly.Tag(tag_meta) for tag_meta in tag_metas if tag_name in tag_meta.name]
-        else:
+        if tag_name == "PNEUMONIA":
             if "VIRUS" in image_path:
                 tags = [
-                    sly.Tag(tag_meta) for tag_meta in tag_metas if tag_name == "PNEUMONIA_VIRUS"
+                    sly.Tag(tag_meta)
+                    for tag_meta in tag_metas
+                    if tag_meta.name == "PNEUMONIA_VIRUS"
                 ]
-            elif "BACTERIA" in image_path:
+            if "BACTERIA" in image_path:
                 tags = [
-                    sly.Tag(tag_meta) for tag_meta in tag_metas if tag_name == "PNEUMONIA_BACTERIA"
+                    sly.Tag(tag_meta)
+                    for tag_meta in tag_metas
+                    if tag_meta.name == "PNEUMONIA_BACTERIA"
                 ]
 
         return sly.Annotation(img_size=(img_height, img_wight), img_tags=tags)
